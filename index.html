@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSHANDSON Function</title>
+</head>
+<body>
+    <pre>
+Question 1.Create one function with zero parameter having a console statement; 
+function printo()
+{
+  console.log("Hello");
+}
+printo();
+Answer 1.
+Output:Hello 
+
+Question 2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+function additiono(a,b)
+{
+  const sum=a+b;
+  console.log(" Sum of " + a, b + " is " +sum);
+}
+additiono(3,4);
+Answer 2.
+Output: Sum of 3 4 is 7
+
+Question 3. Create one arrow function
+const func=(name)=>{
+    console.log(name);
+  }
+  func("Joe");
+  Answer 3.
+  Output: Joe
+
+Question 4.Print output: 
+var x = 21;
+var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();
+Answer 4. 
+Output:undefined
+
+Question 5.Print output: 
+var x = 21;
+girl ();
+console.log(x)
+function girl() {
+    console.log(x);
+    var x = 20;
+};
+Answer 5. 
+Output:undefined
+       21
+
+Question 6.Print output: 
+var x = 21;
+a();
+b();
+
+  function a() {
+    
+   x = 20;
+  console.log(x);
+};
+ function b() {
+    
+    x = 40;
+   console.log(x);
+};
+Answer 6. 
+Output:20
+       40
+
+Question 7.Write a function that accepts parameter n and returns factorial of n
+function fact(n){
+  let ans = 1;
+  if(n == 0 || n == 1){
+    return ans;
+  }
+  else{
+    for(var i=n;i>=1;i--){
+      ans=ans*i;
+    }
+    return ans;
+  }
+}
+let n=4;
+ans=fact(n);
+console.log("factorial of "+ n + " is " +ans);
+Answer 7. 
+Output: factorial of 4 is 24
+       
+       
+
+
+    </pre>
+</body>
+</html>
